@@ -16,7 +16,7 @@ workflows:
 jobs:
   build:
     docker:
-      - image: golang:1.18.3-alpine3.16
+      - image: cimg/go:1.18.3
     steps:
       - checkout
       - run: go test -v ./...
